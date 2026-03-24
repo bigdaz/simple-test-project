@@ -17,5 +17,6 @@ jobs:
       uses: gradle/actions/setup-gradle@main
       with:
         build-scan-publish: true
+        develocity-access-key: "foo"
     - name: Run build
       run: ./gradlew build
