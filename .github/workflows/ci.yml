@@ -21,7 +21,7 @@ jobs:
       with:
         cache-read-only: false
         cache-encryption-key: 'AAAAAAAAAAAAAAAAAAAAAA=='
-        #develocity-url: 'https://ge.solutions-team.gradle.com'
+        develocity-url: 'https://ge.solutions-team.gradle.com'
         develocity-access-key: ${{ secrets.DEVELOCITY_ACCESS_KEY }}
     - name: Run build
       run: ./gradlew build
