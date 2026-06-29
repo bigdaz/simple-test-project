@@ -21,5 +21,6 @@ jobs:
       with:
         cache-read-only: false
         cache-encryption-key: 'AAAAAAAAAAAAAAAAAAAAAA=='
+        develocity-access-key: ${{ secrets.DEVELOCITY_ACCESS_KEY }}
     - name: Run build
       run: ./gradlew build
